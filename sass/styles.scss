@@ -1,0 +1,223 @@
+@import "partials/settings";
+@import "partials/reset";
+@import "partials/foundation";
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic);
+
+html {
+  body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    
+    p {
+      font-size: 13px;
+    }
+
+    h2{    
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px; 
+
+    }    
+    background-image: url("/assets/bg.jpg"); 
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+header{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  h2 {
+    margin: 0;
+    background-image: url("/assets/header_bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    @media #{$small-only}{
+        text-align: left;
+        background-image: none;
+        padding-left: 10px;
+      }
+        
+    @media #{$medium-only}{
+       
+        padding-left: 40px;
+      
+    }
+    a{
+      border: $border 2px solid;
+      text-decoration: none;
+      color: $cross;
+      font-size: 24px;
+      font-weight: bold;
+      float: right;
+      margin: 20px 20px 0 0; 
+    }
+  } 
+
+  .menu {
+
+    @media#{$small-only}{
+      
+      li:first-child {
+        border-right: solid white 1px;
+        line-height: 45px;
+        width: 30%;
+      }
+      .middle-li {
+        padding-right: 7%;
+        padding-left: 7%;
+      }
+      li:last-child {
+        border-left: solid white 1px;
+        line-height: 45px;
+        width: 30%
+      }
+    }
+
+    ul {
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-weight: 400;
+      @media#{$small-only}{
+        padding: 0;
+      }
+      margin: 0;
+      padding: 20px 0 20px 0;
+      background-color: $title-font;
+      li{
+        color: $nav;
+        text-transform: uppercase;
+        display: inline-block;
+
+      }
+    }
+  }
+}
+
+.content {
+  @media#{$small-only}{
+    margin: 0 0 0 0;
+  }
+  ul {
+      margin-left: 25px;
+      text-align: left;
+    li{
+      display: inline-block;
+
+    }
+  }
+  margin: 20px;
+  text-align: center;
+    img{
+    height: 170px;
+    width: 280px;
+    margin-bottom: 25px;
+    background-position: center;
+      @media#{$small-only} {
+        height: 250px;
+        width: 410px;
+      }
+    }
+    h2, p{
+      text-align: left;
+      margin: 0 25px 0 25px;
+    }
+
+  .pugs-top {
+    @media #{$medium-up}{       
+      display: inline-block;
+    }
+    .pug1 {
+    
+      height: 420px;
+      width: 325px;
+      margin: 25px;
+      margin-right: 0;
+      padding-top: 25px;
+      float: left;
+      text-align: center;
+      background-color: white;
+      img {
+        background-image: url("/assets/harpseal.jpg");
+      }
+    }
+    .pug2 {
+      height: 420px;
+      width: 325px;
+      margin: 25px;
+      padding-top: 25px;
+      text-align: center;
+      background-color: white;
+      float: right;
+      img {
+        background-image: url("/assets/jds.jpg");
+      }
+    }
+    @media#{$small-only} {
+      .pug1, .pug2{
+        height: 460px;
+        width: 480px;
+        float: none;
+      }      
+    }
+  }
+  .pugs-bottom {
+    display: inline-block;
+    .pug3 {
+
+      height: 420px;
+      width: 325px;
+      margin: 0 0 25px 25px;
+
+      padding-top: 25px;
+      text-align: center;
+      background-color: white;
+      float: left;
+      img {
+        background-image: url("/assets/pompuppy.jpg");
+        background-repeat: no-repeat;
+      }
+    }
+    .pug4 {
+      height: 420px;
+      width: 325px;
+      margin: 0 25px 25px 25px;
+      padding-top: 25px;
+      text-align: center;
+      background-color: white;
+      float: right;
+      img {
+        background-image: url("/assets/hamrab.jpg");
+      }   
+    }
+    @media#{$small-only} {
+      .pug3, .pug4{
+        float: none;
+        height: 460px;
+        width: 480px;
+      }      
+    }
+  }
+}
+h2 {
+    font-size: 24px;
+}
+
+footer {
+  text-align: center;
+  word-spacing: 10px;
+  background-color: $title-font;
+  padding: 10px 0 15px 0;
+  @media#{$small-only}{
+    display: none;
+  }
+}
+
+
+
+
